@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSICJJ - Tu Tienda de Música</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🎵 MUSICJJ</div>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><button id="verCarrito">🛒 Ver Carrito</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="productos" class="productos">
+            <h2>Productos Destacados</h2>
+            <div class="productos-grid">
+                <div class="producto" data-id="1" data-nombre="Guitarra Acústica" data-precio="120">
+                    <img src="GUITARRA.JPG" alt="Guitarra acústica">
+                    <h3>Guitarra Acústica</h3>
+                    <p>$120.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="2" data-nombre="Teclado Musical" data-precio="350">
+                    <img src="TECLADO.JPG" alt="Teclado musical">
+                    <h3>Teclado Musical</h3>
+                    <p>$350.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="3" data-nombre="Batería Electrónica" data-precio="600">
+                    <img src="BATERIA.JPG" alt="Batería electrónica">
+                    <h3>Batería Electrónica</h3>
+                    <p>$600.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="4" data-nombre="Micrófono Profesional" data-precio="80">
+                    <img src="MICROFONO.JPG" alt="Micrófono profesional">
+                    <h3>Micrófono Profesional</h3>
+                    <p>$80.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="5" data-nombre="Auriculares Estudio" data-precio="100">
+                    <img src="AURICULARES.JPG" alt="Auriculares de estudio">
+                    <h3>Auriculares Estudio</h3>
+                    <p>$100.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="6" data-nombre="Controlador MIDI" data-precio="200">
+                    <img src="MIDI.JPG" alt="Controlador MIDI">
+                    <h3>Controlador MIDI</h3>
+                    <p>$200.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="7" data-nombre="Amplificador de Guitarra" data-precio="250">
+                    <img src="AMPLIFICADOR.JPG" alt="Amplificador de guitarra">
+                    <h3>Amplificador de Guitarra</h3>
+                    <p>$250.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+                <div class="producto" data-id="8" data-nombre="Pedal de Efectos" data-precio="150">
+                    <img src="PEDAL.JPG" alt="Pedal de efectos">
+                    <h3>Pedal de Efectos</h3>
+                    <p>$150.00</p>
+                    <button class="agregarCarrito">Añadir al Carrito</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 MUSICJJ. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Carrito Modal -->
+    <div id="carritoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="carritoItems"></div>
+            <p>Total: $<span id="totalCarrito">0.00</span></p>
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
